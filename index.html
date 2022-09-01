@@ -2,18 +2,81 @@
 <html>
     <head>
         <title> Kathryn's Website </title>
+        <style>
+            body {
+                background: rgb(122, 255, 248);
+                color: rgb(170, 134, 255);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+              max-width: 800px;
+                margin: auto;
+            }
+         
+            /* navigation menu */
+            nav {
+                background: rgb(128, 248, 124);
+               margin: 0 auto;
+               margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+         
+            /* main container area beneath menu */
+            main {
+                background: rgb(242, 243, 190);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            #interests {
+                border: 4px rgb(139, 243, 130) ridge;
+                padding: 8px;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+         </style>
     </head>
 
     <body>
         <!-- all content goes here -->
-         <div>
+         <div id="all contents">
             <nav>
                 <h1> Kathryn's Website </h1> 
-                <ul> 
-                    <li> 
+                <ul id="nav-ul"> 
+                    <li class="nav-li"> 
                         <a href="index.html"> Home </a>
                     </li>
-                    <li>
+                    <li class="nav-li">
                         <a href="portfolio.html"> Portfolio </a>
                     </li>
                 </ul> 
@@ -21,16 +84,16 @@
 
             <main>
                 <!-- sidebar goes here -->
-                <div>
-                    <img src=""
+                <div class="sidebar">
+                    <img class="sidebar-img" src="data:image/jpeg;base64,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"
                 </div>
 
                 <!-- content section -->
-                <div> 
+                <div class="content"> 
                     <h2> Kathryn Meaux </h2>
                     <p> Junior at David Thibodaux </p>
                     <!-- interests section-->
-                    <div> 
+                    <div id="interests"> 
                         <h3> Interests </h3>
                         <ul>
                             <li> Cooking </li>
