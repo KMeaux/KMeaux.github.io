@@ -401,8 +401,7 @@ Parallax is a technique in animation for giving the illusion of depth. When you 
   > **HINT:** Remember, to iterate, we can create a `for` loop that looks like this:
   >
   > ```js
-  > for (var i = 0; i < myArray.length; i++) {
-  >   var eachElement = myArray[i];
+  > 
   >
   >   // code to do something with each element
   > }
