@@ -36,7 +36,7 @@ var background = function (window) {
             // TODO: 2 - Part 2
             // this fills the background with a obnoxious yellow
             // you should modify this to suit your game
-            var backgroundFill = draw.rect(canvasWidth,canvasHeight,'lavender');
+            var backgroundFill = draw.rect(canvasWidth,groundY,'lavender');
             background.addChild(backgroundFill);
             
             // TODO: 3 - Add a moon and starfield
@@ -82,7 +82,7 @@ var background = function (window) {
             var groundY = ground.y;
             
             // TODO 4: Part 2 - Move the tree!
-            tree.x = tree.x - 1;
+            tree.x = tree.x - 4;
 
             if (tree.x < -200) {
               tree.x = canvasWidth;
@@ -90,11 +90,11 @@ var background = function (window) {
             
             // TODO 5: Part 2 - Parallax
             for (var i = 0; i < buildings.length; i++) {
-                var buildings = buildings[i];
-                buildings.x = buildings.x -2;
+                var bldg = buildings[i];
+                bldg.x = buildings.x -2;
 
-                if (buildings.x < -100) {
-                    buildings.x = canvasWidth;
+                if (bldg.x < -200) {
+                  bldg.x = canvasWidth;
                 }
             };
 

@@ -11,16 +11,26 @@ var level01 = function (window) {
 
         // this data will allow us to define all of the
         // behavior of our game
-        var levelData = {
-            "name": "Robot Romp",
-            "number": 1, 
-            "speed": -3,
-            "gameItems": [
-                { "type": "sawblade", "x": 400, "y": groundY },
-                { "type": "sawblade", "x": 600, "y": groundY },
-                { "type": "sawblade", "x": 900, "y": groundY },
-            ]
-        };
+        var levelData = [
+            {
+                name: "Robot Romp",
+                number: 1, 
+                speed: -3,
+                gameItems: [
+                    { "type": "sawblade", "x": 400, "y": groundY },
+                    { "type": "sawblade", "x": 600, "y": groundY },
+                    { "type": "sawblade", "x": 900, "y": groundY },
+                ]
+            },
+            {
+                name: "Robot Rampage",
+                number: 2,
+                speed: -3,
+                gameItems: [
+                    {type: "enemy", x:400, y: groundY-50}
+                ]
+            }
+        
         window.levelData = levelData;
         // set this to true or false depending on if you want to see hitzones
         game.setDebugMode(true);
